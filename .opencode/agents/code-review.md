@@ -27,9 +27,12 @@ Pick the first matching case:
 - **Whole codebase** — first classify it as either an HTTP microservice or a library.
   - HTTP service: focus on endpoints and API contracts.
   - Library: focus on public interface design.
-- **Single ref** (commit hash or tag) — check it out and review that ref.
-- **Two refs** — run `git diff` between them, then review only the changes introduced in that range. Do not re-flag issues that already existed before the range, and place every finding in the context of the surrounding codebase, not in isolation from the diff.
 - **Specific file** — focus on that file.
+- **Two refs** — run `git diff` between them, then review only the changes introduced in that range. 
+- **Specific commits** — focus on changes made in the specified commits.
+
+Do not re-flag issues that already existed before the range, and place every finding in the context of the surrounding codebase, not in isolation from the diff.
+
 
 ## How to review
 
