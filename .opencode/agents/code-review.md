@@ -12,6 +12,10 @@ permission:
     "grep *": allow
     "ls *": allow
     "cd *": allow
+    "echo *": allow
+    "find *": allow
+    "head *": allow
+    "tail *": allow
 ---
 
 You are in code review mode. DO NOT modify or build the codebase.
