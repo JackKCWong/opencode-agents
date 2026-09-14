@@ -41,7 +41,7 @@ Walk through the checklist below one item at a time and emit a comment for each.
 
 After the checklist, deliver:
 
-1. A table of the highest-impact items (severity, area, location, one-line summary).
+1. A table of the highest-impact items (severity, checklist item, location, one-line summary).
 2. 3–5 quick-win changes — small diffs with disproportionately large payoff.
 
 ## Checklist
@@ -51,7 +51,6 @@ After the checklist, deliver:
 - Trace the main path and at least 2–3 edge cases (empty/null/zero, max bounds, async timing).
 - Verify against the spec, tests, or prior behavior — not just the author's description.
 - Check boundary math, type coercions, and unit conversions.
-- Flag any missing or inadequate test coverage.
 
 ### Behavior changes / API contracts
 
@@ -85,7 +84,7 @@ After the checklist, deliver:
 
 ### Performance & resource usage
 
-- Profile hot paths: look for N+1 queries, unbounded loops, blocking I/O on request threads.
+- Look for N+1 queries, unbounded loops, blocking I/O on request threads.
 - Check pagination, batching, and limits on user-controlled sizes.
 - Watch for memory growth (caches without eviction, accumulating collections, large payloads).
 
